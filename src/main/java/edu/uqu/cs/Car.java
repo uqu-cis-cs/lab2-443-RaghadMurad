@@ -2,18 +2,14 @@ package edu.uqu.cs;
 /*
  * Lab 2 
  * CS 1312
+ * 
  */
 
-/*
-* Make sure to complete and submit your lab
-*/
-import java.util.Scanner;
-
-public class Car{
+public class Car {
 
     /************ Part 1 **************/
     /**
-     * Decalre all instance variables 
+     * Decalre all instance variables
      * model of type String
      * inOutGarage of type boolean
      * Make sure they are all private
@@ -22,17 +18,25 @@ public class Car{
      *
      */
 
+    private String model;
+    private boolean inOutGarage;
+
     /************ Part 2 **************/
     /**
-     * Define a default constructor and set 
+     * Define a default constructor and set
      * all instance variables to their default values
      * model ="";
      * inOutGarage =false;
      * Syntax:
      * public className (){
-     *      //body
+     * //body
      * }
      */
+    public Car() {
+        this.model = "";
+        this.inOutGarage = false;
+    }
+    
 
     /************ Part 3 **************/
     /**
@@ -40,21 +44,35 @@ public class Car{
      * for each instance variable
      * Syntax:
      * public dataType getInstanceVariableName (){
-     *      return this.InstanceVariableName;
+     * return this.InstanceVariableName;
      * }
      */
 
+    public String getModel() {
+        return this.model;
+    }
+
+    public boolean getinOutGarage() {
+        return this.inOutGarage;
+    }
 
     /************ Part 4 **************/
     /**
      * Define all setter methods below
      * for each instance variable
      * public void setInstanceVariableName (parameter){
-     *      this.InstanceVariableName= parameter;
+     * this.InstanceVariableName= parameter;
      * }
      *
      */
+    public void setModel(String model) {
+        this.model = model;
+    }
 
+    public void setinOutGarage(boolean inOutGarage) {
+
+        this.inOutGarage = inOutGarage;
+    }
 
     /************ Part 5 **************/
     /**
@@ -63,7 +81,12 @@ public class Car{
      * moveCarIn() to set the inOutGarage flag to true;
      *
      */
+    public void moveCarIn() {
+        this.inOutGarage = true;
+    }
 
-
+    public void moveCarOut() {
+        this.inOutGarage = false;
+    }
 
 }
