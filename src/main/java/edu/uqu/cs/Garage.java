@@ -11,6 +11,7 @@ package edu.uqu.cs;
 
 public class Garage{
 
+
     /************ Part 1 **************/
     /**
      * Decalre an instance variable named cars

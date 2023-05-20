@@ -36,6 +36,7 @@ public class Car {
         this.model = "";
         this.inOutGarage = false;
     }
+    
 
     /************ Part 3 **************/
     /**
